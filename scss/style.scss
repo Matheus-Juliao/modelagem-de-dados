@@ -1,0 +1,23 @@
+button {
+    margin-top: 10px !important;
+    float: right;
+    margin: 5px;  
+}
+
+.navbar-brand {
+    margin-left: 15px;
+}
+
+.btn-danger {
+    float: right;
+}
+
+@media (min-width: 1200px) {
+    .formFun, .formCli {
+        max-width: 1365px !important;
+        font-size: 12px !important;
+    }
+}
+
+
+
