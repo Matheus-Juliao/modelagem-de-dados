@@ -30,9 +30,19 @@
                 </div>
             </nav>
 
+
+
+
+
+
         <form class="container formCli" action="select_cliente_html.php" method="GET" style="margin-left: 0;">
             <div class="form-group">
-                <h1>Cadastro Bancário - Tabela Clientes</h1>
+                <h1>Cadastro Bancário - Tabela Clientes
+                    <a href="gerar_planilha.php">
+                        <button type="button" class="btn" style="background-color: #90EE90;" >Exportar para o Excel</button>
+                    </a>
+                </h1>
+
             </div>
             <div class="form-group">
                 <h3>Dados Pessoais</h3>
@@ -83,7 +93,8 @@
                     INNER JOIN endereco AS e ON e.fk_cliente = c.id_cliente
                     INNER JOIN tipo_conta AS t ON t.fk_conta = con.numero_conta
                     INNER JOIN agencia AS a ON a.id_agencia = t.fk_agencia
-                    INNER JOIN tipo_de_conta AS tc ON tc.id_tipo = t.fk_tipo;");
+                    INNER JOIN tipo_de_conta AS tc ON tc.id_tipo = t.fk_tipo 
+                    ORDER BY id_cliente DESC;");
                     $busca = mysqli_query($conexao, $query);
                     while($dados = mysqli_fetch_array($busca)) {       
                         ?>

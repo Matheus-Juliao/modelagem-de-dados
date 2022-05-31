@@ -76,7 +76,8 @@
                     FROM funcionario AS f
                     INNER JOIN endereco AS e ON e.fk_funcionario = f.id_funcionario
                     INNER JOIN agencia AS a ON a.id_agencia = f.fk_agencia
-                    INNER JOIN departamento AS d ON d.id_departamento = f.fk_departamento;");
+                    INNER JOIN departamento AS d ON d.id_departamento = f.fk_departamento
+                    ORDER BY id_funcionario DESC;");
                     $busca = mysqli_query($conexao, $query);
                     while($dados = mysqli_fetch_array($busca)) {       
                         ?>
