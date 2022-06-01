@@ -7,7 +7,7 @@
 	<body>
 
         <?php
-            $arquivo = "clientes.xls";
+            $arquivo = "funcionários.xls";
             $html = '';
             $html .= '<table border="1">';
                 
