@@ -32,7 +32,11 @@
 
         <form class="container formFun" action="select_funcionario_html.php" method="GET" style="margin-left: 0;">
             <div class="form-group">
-                <h1>Cadastro Bancário - Tabela Funcionários</h1>
+                <h1>Cadastro Bancário - Tabela Funcionários
+                    <a href="gerar_planilha_funcionario.php">
+                        <button type="button" class="btn" style="background-color: #90EE90;" >Exportar para o Excel</button>
+                    </a>
+                </h1>
             </div>
             <div class="form-group">
                 <h3>Dados Pessoais</h3>

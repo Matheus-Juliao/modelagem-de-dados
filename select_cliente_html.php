@@ -30,15 +30,10 @@
                 </div>
             </nav>
 
-
-
-
-
-
         <form class="container formCli" action="select_cliente_html.php" method="GET" style="margin-left: 0;">
             <div class="form-group">
                 <h1>Cadastro Bancário - Tabela Clientes
-                    <a href="gerar_planilha.php">
+                    <a href="gerar_planilha_cliente.php">
                         <button type="button" class="btn" style="background-color: #90EE90;" >Exportar para o Excel</button>
                     </a>
                 </h1>
